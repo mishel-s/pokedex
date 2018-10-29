@@ -1,0 +1,23 @@
+@media (min-width: 250px) {
+    header {
+        width: 100%;
+        height: 150px;
+        background: #4CCEB2; /* Для браузеров, которые не поддерживают градиенты */
+        background: -webkit-radial-gradient(#4CCEB2, #2F8FD8); /* Для Opera 11.1 - 12.0 */
+        background: -o-radial-gradient(#4CCEB2, #2F8FD8); /* Для Opera 11.1 - 12.0 */
+        background: -moz-radial-gradient(#4CCEB2, #2F8FD8); /* Для Firefox 3.6 - 15 */
+        background: radial-gradient(#4CCEB2, #2F8FD8); /* Стандартный синтаксис */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header img {
+        width: 300px;
+    }
+}
+@media (min-width: 750px) {
+    header img {
+        height: 150px;
+        width: auto;
+    }
+}
