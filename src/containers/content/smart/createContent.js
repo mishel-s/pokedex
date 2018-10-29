@@ -5,10 +5,9 @@ let CreateContent = (props) => {
     const itemsPerPage = props.itemsPerPage;
     const pokemons = props.pokemons;
     let listPokemons = [];
-    console.log(pokemons.length);
     if(pokemons.length) {
       for(let i=0; i < itemsPerPage; i++) {
-        if(pokemons[i] != undefined) {
+        if(pokemons[i] !== undefined) {
           listPokemons.push(<PokemonCard key={pokemons[i].name.toString()} pokemon={pokemons[i]} />)
         }
       }

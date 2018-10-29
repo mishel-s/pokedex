@@ -1,5 +1,3 @@
-import React from 'react';
-
 let checkpokemonTypes = (pokemonsTypes, checkedTypes) => {
   let arrShowPokemon = [];
   for(let i=0; i < checkedTypes.length; i++) {

@@ -15,11 +15,9 @@ let GetPokemonsInfo = () => {
     let pokemonsInfo = [];
     return Promise.all(arrPromisesPokemons)
             .then((pokemons)=> {
-                console.log(pokemons);
                 pokemons.forEach((pokemon)=> {
                     pokemonsInfo.push(pokemon)
                 })
-                console.log(pokemonsInfo);
                 return pokemonsInfo;
             })
             .catch((error) => {

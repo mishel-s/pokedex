@@ -38,6 +38,7 @@
         display: none;
         position: fixed;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100vh;
         z-index: 103;
@@ -48,32 +49,15 @@
     .pokemonBg {
         position: fixed;
         width: 100%;
-        height: 100vh;
-        /*left: 0;*/
-        /*top: 0;*/
+        height: 100%;
         right: 100%;
         opacity: 0.8;
         background-color: black;
         z-index: 104;
-        /*-webkit-transition-property: right;
-        -moz-transition-property: right;
-        -ms-transition-property: right;
-        -o-transition-property: right;
-        transition-property: right;
-        -webkit-transition-duration: 3s;
-        -moz-transition-duration: 3s;
-        -ms-transition-duration: 3s;
-        -o-transition-duration: 3s;*/
-        /*transition-duration: 3s;: right 3s ease-in;*/
-        /*-webkit-transition: right 3s ease-in;
-        -moz-transition: right 3s ease-in;
-        -ms-transition: right 3s ease-in;
-        -o-transition: right 3s ease-in;
-        transition: right 3s ease-in;*/
     }
     .pokemonMain {
-        width: 40%;
-        height: 70vh;
+        width: 85%;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -128,11 +112,16 @@
         border-top: 1px solid black;
         border-bottom: 1px solid black;
     }
+    .pokemonInfo_details p {
+      margin-top: 10px;
+      margin-bottom: 10px
+    }
 }
 @media (min-width: 750px) {
-    /*.pokemonInfo {*/
-        /*bottom: -7px;*/
-    /*}*/
+    .pokemonMain {
+        width: 40%;
+        height: 60vh;
+    }
     .pokemonInfo img {
         width: 60%;
     }

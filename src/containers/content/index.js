@@ -20,7 +20,6 @@ class Content extends Component {
                     pokemonsInfo: data,
                 });
                 {this.props.getArrayPokemonsInfo(data)};
-
             });
     }
     render() {

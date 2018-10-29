@@ -20,7 +20,6 @@ let toggleChecked = (e) => {
 let CreateTypesList = (props) => {
     const types = props.types;
     const addTypeToList = props.addTypeToList;
-    const removeTypeFromList = props.removeTypeFromList;
     return (
         <ul>
             {

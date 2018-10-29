@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import logo from './pokemon.jpeg';
+import React from 'react';
 import styles from  './styles.css';
 
 let getPokemonTypes = (types) => {
